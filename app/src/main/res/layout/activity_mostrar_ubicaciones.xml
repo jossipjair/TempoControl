@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.home.tempocontrol.Vista.MostrarUbicaciones">
+
+
+    <EditText
+        android:id="@+id/txtFechaReporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha Reporte"
+        android:inputType="date"
+        />
+    <Button
+        android:id="@+id/btnReporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Genera Reporte"
+        android:layout_below="@+id/txtFechaReporte"
+        android:background="@color/colorAzul"
+        android:textColor="@color/colorBlanco"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="100dp"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnVolver"
+        android:text="DNI           PROCESO           SUB-PROCESO           LINEA           LADO           MESA           MOTIVO           FECHA"
+        android:textColor="@color/colorNegro"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dgvListaUbicaciones"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblTitulo"
+        android:numColumns="8"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:textAlignment="center"
+        />
+</RelativeLayout>

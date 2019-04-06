@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.home.tempocontrol.Vista.Principal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/lblMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MENÚ PRINCIPAL"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                />
+            <Button
+                android:id="@+id/btnRegistroProceso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ingres"
+                android:text="@string/btnRegistrarProceso"
+                android:layout_below="@+id/lblMenu"
+                android:textSize="15dp"
+                android:layout_marginTop="50dp"
+                android:onClick="llamaProceso"
+                />
+
+            <Button
+                android:id="@+id/btnRegistraSubProceso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnRegistrarSubProceso"
+                android:layout_below="@+id/btnRegistroProceso"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:onClick="llamaSubProceso"
+                />
+
+            <Button
+                android:id="@+id/btnRegistrarLinea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnRegistrarLinea"
+                android:textSize="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_below="@+id/btnRegistraSubProceso"
+                android:onClick="llamaLinea"
+            />
+
+            <Button
+                android:id="@+id/btnRegistrarLado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnRegistrarLado"
+                android:textSize="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_below="@+id/btnRegistrarLinea"
+                android:onClick="llamarLado"
+                />
+
+            <Button
+                android:id="@+id/btnRegistrarMesa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnRegistrarMesa"
+                android:textSize="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_below="@+id/btnRegistrarLado"
+                android:onClick="llamarMesa"
+                />
+
+
+            <Button
+                android:id="@+id/btnRegistrarMotivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnRegistrarMotivo"
+                android:textSize="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_below="@+id/btnRegistrarMesa"
+                android:onClick="llamarMotivo"
+                />
+
+            <Button
+                android:id="@+id/btnRegistrarPersona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnRegistrarPersona"
+                android:textSize="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_below="@+id/btnRegistrarMotivo"
+                android:onClick="llamarPersona"
+                />
+
+            <Button
+                android:id="@+id/btnRegistrarUbicaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnRegistrarPersona"
+                android:layout_marginTop="26dp"
+                android:background="@color/colorAzul"
+                android:text="@string/btnRegistrarUbicacion"
+                android:textColor="@color/colorBlanco"
+                android:onClick="llamarUbicaciones"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/btnMostrarUbicaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnRegistrarUbicaciones"
+                android:layout_marginTop="26dp"
+                android:background="@color/colorAzul"
+                android:text="MOSTRAR UBICACIONES"
+                android:textColor="@color/colorBlanco"
+                android:onClick="llamarListaUbicaciones"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnMostrarUbicaciones"
+                android:text="SALIR"
+                android:textColor="@color/colorBlanco"
+                android:background="@color/colorRojo"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:onClick="salir"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

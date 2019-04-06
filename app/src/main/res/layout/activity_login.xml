@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.home.tempocontrol.Vista.Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imgLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/log"/>
+
+            <TextView
+                android:id="@+id/lblUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="USUARIO:"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_below="@+id/imgLogin"
+                />
+
+            <EditText
+                android:id="@+id/txtUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblUsuario"
+                android:hint="Ingrese Usuario"
+                android:inputType="textCapCharacters"/>
+
+            <TextView
+                android:id="@+id/lblPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTRASEÑA:"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_below="@+id/txtUsuario"/>
+
+            <EditText
+                android:id="@+id/txtPasword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblPassword"
+                android:hint="Ingrese Contraseña"
+                android:inputType="textWebPassword"/>
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPasword"
+                android:text="INGRESAR"
+                android:textColor="@color/colorBlanco"
+                android:background="@color/colorRojo"
+                android:textStyle="bold"
+                android:onClick=""
+                android:layout_marginTop="20dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Control de Ubicaciones Móvil</string>
+    <string name="btnRegistrarProceso">Registrar Proceso</string>
+    <string name="btnRegistrarMotivo">Registrar Motivo</string>
+    <string name="btnRegistrarLinea">Registrar Línea</string>
+    <string name="btnRegistrarSubProceso">Registrar SubProceso</string>
+    <string name="btnSalida">Dar salida a Producto</string>
+    <string name="btnRegistrarPersona">Registrar Persona</string>
+    <string name="btnRegistrarMesa">Registrar Mesa</string>
+    <string name="btnRegistrarLado">Registrar Lado</string>
+    <string name="btnRegistrarUbicacion">INGRESO DE UBICACIONES</string>
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.home.tempocontrol.Vista.RegistraUbicaciones">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR UBICACIONES"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/lblDni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DNI"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lblTitulo"
+        android:textAlignment="center"
+        android:textColor="@color/colorNegro"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/txtDni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblDni"
+        android:hint="Ingrese DNI"
+        android:inputType="number"
+        android:maxLength="8"/>
+
+    <EditText
+        android:id="@+id/txtNombresApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDni"
+        android:inputType="number"
+        android:enabled="false"/>
+    <TextView
+        android:id="@+id/lblProcesoUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROCESO"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtNombresApellidos"
+        android:textAlignment="center"
+        android:textColor="@color/colorNegro"
+        android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/spProceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblProcesoUbicacion"
+        android:spinnerMode="dialog"></Spinner>
+
+    <TextView
+        android:id="@+id/lblSubProceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUB - PROCESO"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spProceso"
+        android:textAlignment="center"
+        android:textColor="@color/colorNegro"
+        android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/spSubProceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblSubProceso"
+        android:spinnerMode="dialog"></Spinner>
+
+    <TextView
+        android:id="@+id/lblLineaUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LINEA"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spSubProceso"
+        android:textAlignment="center"
+        android:textColor="@color/colorNegro"
+        android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/spLinea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblLineaUbicacion"
+        android:spinnerMode="dialog"></Spinner>
+
+    <TextView
+        android:id="@+id/lblLadoUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LADO"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spLinea"
+        android:textAlignment="center"
+        android:textColor="@color/colorNegro"
+        android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/spLado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblLadoUbicacion"
+        android:spinnerMode="dialog"></Spinner>
+
+    <TextView
+        android:id="@+id/lblMesaUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MESA"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spLado"
+        android:textAlignment="center"
+        android:textColor="@color/colorNegro"
+        android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/spMesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblMesaUbicacion"
+        android:spinnerMode="dialog"></Spinner>
+
+    <TextView
+        android:id="@+id/lblMotivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MOTIVO"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spMesa"
+        android:textAlignment="center"
+        android:textColor="@color/colorNegro"
+        android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/spMotivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblMotivo"
+        android:spinnerMode="dialog"></Spinner>
+
+    <TextView
+        android:id="@+id/lblFechaHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FECHA Y HORA DEL SISTEMA"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spMotivo"
+        android:textAlignment="center"
+        android:textColor="@color/colorNegro"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/txtFechaHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblFechaHora"
+        android:inputType="datetime"/>
+
+    <Button
+        android:id="@+id/btnRegistrarUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFechaHora"
+        android:text="REGISTRAR PERSONA EN UBICACION"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorAzul"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/btnVuelvedesdeUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRegistrarUbicacion"
+        android:text="VOLVER"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorRojo"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:onClick="volverMenu"
+        />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
